@@ -1,0 +1,53 @@
+{
+  "name": "dsh-skill-zsxq",
+  "version": "0.1.0",
+  "description": "知识星球知识库 Agent Skill：同步帖子与附件、抽取 docx/pdf 正文、补全分类/摘要/金句、重建索引、检索（DSH skill bundle + 通用 Agent Skills 目录）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./SKILL.md": "./SKILL.md",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "SKILL.md",
+    "reference/**/*.md",
+    "scripts/**/*.py",
+    "config.example.json",
+    "requirements.txt",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-skill",
+    "agent-skill",
+    "zsxq",
+    "知识星球",
+    "knowledge-base"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.5",
+    "@deepseek-ai/dsh-skill": ">=0.2.0-rc.2 <0.2.1-0 || >=0.2.1-rc.1 <0.3.0-0"
+  },
+  "dependencies": {
+    "yaml": "^2.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangcaiqian/zsxq-skill.git"
+  },
+  "author": "zhangcaiqian",
+  "license": "MIT"
+}

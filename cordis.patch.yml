@@ -1,0 +1,6 @@
+# dsh bundle patch：把本 skill 的 provider 插入 profile 层栈。
+# 单独安装本包时使用；插件包 dsh-plugin-zsxq 会用同一个 id 插入同一条目，
+# 两个 patch 按 id 合并，不会重复挂载。
+- insert:
+    - id: zsxq-knowledge-skill
+      name: 'dsh-skill-zsxq'
