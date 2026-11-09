@@ -1,5 +1,9 @@
 # zsxq-skill
 
+[![npm version](https://img.shields.io/npm/v/dsh-skill-zsxq)](https://www.npmjs.com/package/dsh-skill-zsxq)
+[![npm downloads](https://img.shields.io/npm/dm/dsh-skill-zsxq)](https://www.npmjs.com/package/dsh-skill-zsxq)
+[![license](https://img.shields.io/npm/l/dsh-skill-zsxq)](LICENSE)
+
 把订阅的**知识星球**内容整理成本地 Markdown 知识库的 Agent Skill：同步帖子与附件、抽取 docx/pdf 正文、补全分类/摘要/金句、重建索引、检索查询。
 
 仓库根目录就是 skill 目录（`SKILL.md` + `scripts/` + `reference/`），因此它有**两种用法**：装成 DSH 插件，或直接放进任意 agent 的 skills 目录。
@@ -25,11 +29,11 @@
 ### 方式 A：装进 DSH（推荐，开箱即用）
 
 ```sh
-# 从 GitHub 安装（尚未发布 npm 时）
-dsh plugin --profile web add github:zhangcaiqian/zsxq-skill
-
-# 发布 npm 之后
+# npm（推荐）
 dsh plugin --profile web add dsh-skill-zsxq
+
+# 或从 GitHub 源码安装
+dsh plugin --profile web add github:zhangcaiqian/zsxq-skill
 
 # 本地开发（改完代码即时生效需要重启）
 dsh plugin --profile web add link:/path/to/zsxq-skill
