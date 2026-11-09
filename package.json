@@ -49,5 +49,13 @@
     "url": "git+https://github.com/zhangcaiqian/zsxq-skill.git"
   },
   "author": "zhangcaiqian",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/zhangcaiqian/zsxq-skill#readme",
+  "bugs": {
+    "url": "https://github.com/zhangcaiqian/zsxq-skill/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
 }
